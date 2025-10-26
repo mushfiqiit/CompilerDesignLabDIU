@@ -11,7 +11,7 @@ int main() {
     int j=0, whitespace_count=0;
 
     for(int i=0;str[i]!='\0';i++) {
-        if(str[i]==' ' && str[i]=='\t' && str[i]=='\n') {
+        if(str[i]==' ' || str[i]=='\t' || str[i]=='\n') {
                 whitespace_count++;
         } else {
             result[j++]=str[i];
